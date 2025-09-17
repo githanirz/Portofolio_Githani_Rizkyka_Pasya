@@ -97,64 +97,59 @@ export function JourneySection({ language }: JourneySectionProps) {
                   key={index}
                   className="group hover:shadow-lg transition-all duration-300 hover:-translate-y-1"
                 >
-                  <CardContent className="p-6">
-                    <div className="flex items-start gap-4 md:gap-6">
-                     
+                 <CardContent className="p-4 sm:p-6">
+  <div className="flex flex-col sm:flex-row sm:items-start sm:gap-6">
+    <div className="flex-1 min-w-0">
+      <div
+        className="flex flex-col sm:flex-row sm:items-center sm:justify-between mb-2 cursor-pointer group gap-2 sm:gap-4"
+        onClick={() => toggleExpanded(index)}
+      >
+        <div className="flex-1 min-w-0">
+          <h3 className="text-base sm:text-lg md:text-xl font-semibold mb-1 group-hover:text-primary transition-colors">
+            {experience.title}
+          </h3>
+          <p className="text-muted-foreground text-xs sm:text-sm md:text-base">
+            {experience.company} • {experience.location}
+          </p>
+        </div>
 
-                      <div className="flex-1 min-w-0">
-                        <div
-                          className="flex items-start justify-between mb-2 cursor-pointer group"
-                          onClick={() => toggleExpanded(index)}
-                        >
-                          <div className="flex-1 min-w-0">
-                            <h3 className="text-lg md:text-xl font-semibold mb-1 group-hover:text-primary transition-colors">
-                              {experience.title}
-                            </h3>
-                            <p className="text-muted-foreground text-sm md:text-base">
-                              {experience.company} • {experience.location}
-                            </p>
-                          
-                           
-                          </div>
-                          <div className="flex items-center gap-12 ">
-                              <Button
-                            variant="outline" 
-                            size="sm"
-                            className="text-muted-foreground text-sm"
-                          >
-                            {experience.period}
-                          </Button>
-                            {isExpanded ? (
-                              <ChevronUp className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-primary transition-all duration-200" />
-                            ) : (
-                              <ChevronDown className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-primary transition-all duration-200" />
-                            )}
-                          </div>
-                        </div>
+        <div className="flex items-center justify-between sm:justify-end gap-2 sm:gap-4">
+          <Button
+            variant="outline"
+            size="sm"
+            className="text-muted-foreground text-xs sm:text-sm whitespace-nowrap"
+          >
+            {experience.period}
+          </Button>
+          {isExpanded ? (
+            <ChevronUp className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-primary transition-all duration-200" />
+          ) : (
+            <ChevronDown className="h-4 w-4 md:h-5 md:w-5 text-muted-foreground group-hover:text-primary transition-all duration-200" />
+          )}
+        </div>
+      </div>
 
-                         <div
-                          className={`overflow-hidden transition-all duration-300 ease-in-out ${
-                            isExpanded
-                              ? "max-h-96 opacity-100 mt-4"
-                              : "max-h-0 opacity-0 mt-0"
-                          }`}
-                        >
-                          {/* render description as list */}
-                          {Array.isArray(experience.description) ? (
-                            <ul className="list-disc list-inside space-y-2 text-muted-foreground leading-relaxed text-sm md:text-base">
-                              {experience.description.map((point, i) => (
-                                <li key={i}>{point}</li>
-                              ))}
-                            </ul>
-                          ) : (
-                            <p className="text-muted-foreground leading-relaxed text-sm md:text-base">
-                              {experience.description}
-                            </p>
-                          )}
-                        </div>
-                      </div>
-                    </div>
-                  </CardContent>  
+      <div
+        className={`overflow-hidden transition-all duration-300 ease-in-out ${
+          isExpanded ? "max-h-96 opacity-100 mt-3 sm:mt-4" : "max-h-0 opacity-0 mt-0"
+        }`}
+      >
+        {Array.isArray(experience.description) ? (
+          <ul className="list-disc list-inside space-y-1 sm:space-y-2 text-muted-foreground leading-relaxed text-xs sm:text-sm md:text-base">
+            {experience.description.map((point, i) => (
+              <li key={i}>{point}</li>
+            ))}
+          </ul>
+        ) : (
+          <p className="text-muted-foreground leading-relaxed text-xs sm:text-sm md:text-base">
+            {experience.description}
+          </p>
+        )}
+      </div>
+    </div>
+  </div>
+</CardContent>
+
                 </Card>
               )
             })}
