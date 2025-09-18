@@ -26,7 +26,7 @@ export default function Home() {
       <footer className="bg-muted/50 py-8 border-t">
         <div className="container mx-auto px-4 text-center">
           <p className="text-muted-foreground">
-            © 2024 John Developer. {language === "en" ? "All rights reserved." : "Semua hak dilindungi."}
+            © 2025 Githani Rizkkyka Pasya. {language === "en" ? "All rights reserved." : "Semua hak dilindungi."}
           </p>
         </div>
       </footer>
