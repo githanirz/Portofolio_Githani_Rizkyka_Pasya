@@ -20,7 +20,7 @@ const translations = {
         location: "Bandung",
         period: "September 2024 - Desember 2024",
           description: [
-          "Redesigned the website landing pages using Figma, covering user research, wireframing, and high-fidelity prototyping to improve user acquisition.",
+          "Redesigned multiple pages and key features of the Kobi Education website using Figma, from user research and wireframing to high-fidelity prototyping, resulting in a more intuitive user flow and improved user acquisition.",
           "Designed a mobile-based LMS application, including a complete design system (typography, UI components, interaction patterns) to ensure a consistent and scalable user experience.",
           "Collaborated with cross-functional teams (mentors, developers, and product managers) to accelerate design iterations and reduce design-to-development handoff time."
         ]
@@ -47,7 +47,7 @@ const translations = {
         location: "Bandung",
         period: "September 2024 - Desember 2024",
            description: [
-          "  Melakukan redesain landing page website menggunakan Figma, mulai dari user research, wireframe, hingga prototipe high-fidelity untuk meningkatkan akuisisi pengguna.",
+          " Meredesain berbagai halaman dan fitur utama dari website Kobi Education menggunakan Figma, mulai dari riset pengguna, pembuatan wireframe, hingga prototipe high-fidelity, yang menghasilkan alur pengguna lebih intuitif serta peningkatan akuisisi pengguna.",
           "  Mendesain aplikasi LMS berbasis mobile lengkap dengan design system (typography, UI components, interaction patterns) untuk menciptakan pengalaman pengguna yang konsisten dan mudah diskalakan.",
           "  Bekerja sama dengan tim lintas fungsi (mentor, developer, product manager) untuk mempercepat iterasi desain serta mengurangi waktu handoff ke developer.",
         ]
@@ -79,7 +79,7 @@ export function JourneySection({ language }: JourneySectionProps) {
   }
 
   return (
-    <section className=" md:py-20 bg-background">
+    <section id="journey" className=" md:py-20 bg-background">
       <div className="container mx-auto px-4 ">
          <div className="text-center mb-16">
           <h2 className="text-3xl md:text-4xl font-bold mb-4 text-balance">{t.title}</h2>

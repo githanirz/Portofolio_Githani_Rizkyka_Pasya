@@ -59,6 +59,7 @@ const translations = {
         image: "/webkobi.png",
        technologies: ["Figma", "Miro"],
         category: "UI/UX Designer",
+         featured: true,
           links: [
             { type: "figma", url: "https://www.figma.com/design/qYH6dgCqZG4IarFwuQO2Yg/Redesign-Website?node-id=0-1&t=N9DVzVId3rbwMDcI-1" }
           ]
@@ -144,7 +145,7 @@ const translations = {
           "Aplikasi prediksi kualitas susu berbasis web menggunakan algoritma Random Forest, dilengkapi dengan pelacakan riwayat, manajemen data mitra, dan input Excel/manual, dirancang untuk membantu pabrik Milkta Gemilang meningkatkan efisiensi dan akurasi dalam pengendalian kualitas.",
         image: "/milk.png",
         technologies: ["React", "Node.js", "PostgreSQL", "Stripe", "Tailwind CSS"],
-        category: "Full Stack",
+        category: "Web App",
         featured: true,
          links: [
             { type: "github", url: "https://github.com/githanirz/projectmilkquality" }
@@ -156,7 +157,7 @@ const translations = {
           "Aplikasi berbasis web untuk pemesanan meja restoran secara online, yang memudahkan pengguna dalam mendapatkan meja sesuai kebutuhan. Sistem ini dilengkapi dengan fitur pemesanan meja, pemilihan menu makanan, serta pilihan chef, sehingga memberikan pengalaman reservasi yang praktis, personal, dan efisien.",
         image: "/foody.png",
         technologies: ["Vue.js", "Express.js", "Socket.io", "MongoDB"],
-        category: "Aplikasi Web",
+        category: "Web App",
         featured: true,
          links: [
             { type: "github", url: "https://github.com/githanirz/Book-Restaurant" }
@@ -169,7 +170,7 @@ const translations = {
         image: "/lms.png",
       technologies: ["Figma", "Miro"],
         category: "UI/UX Designer",
-        featured: false,
+        featured: true,
           links: [
             { type: "figma", url: "https://www.figma.com/design/LDO17Op7xDlqXsBNi1VxlW/LMS-Kobi-Education?node-id=1-18470&t=QhIczJwGK2zEDzJ6-1" }
           ]
@@ -181,7 +182,7 @@ const translations = {
         image: "/webkobi.png",
        technologies: ["Figma", "Miro"],
         category: "UI/UX Designer",
-        featured: false,
+       featured: true,
           links: [
             { type: "figma", url: "https://www.figma.com/design/qYH6dgCqZG4IarFwuQO2Yg/Redesign-Website?node-id=0-1&t=N9DVzVId3rbwMDcI-1" }
           ]
@@ -192,8 +193,8 @@ const translations = {
           "Merancang website Eztix.id, sebuah platform pembelian tiket event secara online. Proses desain dimulai dari pembuatan wireframe hingga high-fidelity design, dengan fokus pada kemudahan navigasi dan pengalaman pengguna. Desain ini membantu pengguna menemukan dan membeli tiket sesuai kebutuhan mereka dengan lebih cepat dan praktis.",
         image: "/eztix.png",
        technologies: ["Figma", "Balsamiq"],
-        category: "Backend",
-        featured: false,
+       category: "UI/UX Designer",
+        featured: true,
          links: [
             { type: "figma", url: "https://www.figma.com/design/2fAKhML1fIMu04ZkTogNOh/Eztix-App?node-id=0-1&t=s44NlBOqd6ecJ3Z6-1" }
           ]
@@ -214,7 +215,7 @@ const translations = {
         title: "Growit",
         description:
           "Merancang antarmuka sederhana namun elegan untuk Growit, sebuah dashboard berbasis web yang menyediakan fitur pencatatan dan pelaporan keuangan pengguna. Desain difokuskan pada kemudahan penggunaan dan kejelasan informasi.",
-        image: "/mobile-banking-app.png",
+        image: "/growit.png",
      technologies: ["Figma", "Balsamiq"],
         category: "UI/UX Designer",
         featured: false,
@@ -225,8 +226,8 @@ const translations = {
        {
         title: "FoodKu",
         description:
-          "Merancang antarmuka sederhana namun elegan untuk Growit, sebuah dashboard berbasis web yang menyediakan fitur pencatatan dan pelaporan keuangan pengguna. Desain difokuskan pada kemudahan penggunaan dan kejelasan informasi.",
-        image: "/mobile-banking-app.png",
+          "Mendesain aplikasi mobile Foodku untuk pemesanan makanan restoran secara online. Aplikasi ini memudahkan pengguna memesan dan menikmati hidangan tanpa perlu datang langsung ke restoran.",
+        image: "/foodku.png",
      technologies: ["Figma", "Balsamiq"],
         category: "UI/UX Designer",
         featured: false,

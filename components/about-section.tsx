@@ -13,17 +13,17 @@ export function AboutSection({ language }: AboutSectionProps) {
       title: "About Me",
       subtitle: "A quick insight into my background and interests",
       name: "GITHANI RIZKYKA PASYA",
-      bio1: "Live in Padang with a background in Software Engineering Studies, I have gained solid experience as a UI/UX Designer by working on projects that focus on creating intuitive user flows, clear interfaces, and impactful design systems. These experiences have strengthened my ability to understand user needs and translate them into meaningful digital solutions.",
-      bio2: "Alongside my journey in design, I also have a strong interest in web development. With the skills I developed during my studies and through several web projects, I aspire to gain more professional experience in this field. I am eager to expand my skills as a Web Developer while continuing to grow as a UI/UX Designer, so I can contribute to building digital products that not only work well but also deliver enjoyable user experiences.",
-      resumeButton: "View Resume",
+      bio1: "With a background in Software Engineering, I am passionate about Web Development and eager to grow professionally in this field. Alongside my web skills, I have solid experience as a UI/UX Designer, creating intuitive flows, clear interfaces, and design systems. Combining both skills, I am able to deliver digital products especially websites that are not only functional but also provide engaging and enjoyable user experiences.",
+      cvButton: "View CV",
+      portoButton : "ViewPortofolio"
     },
     id: {
       title: "Tentang Saya",
        subtitle: "Sekilas tentang latar belakang dan minat saya",
-      name: "DEXSA LUKI SAPUTRA",
-      bio1: "Berdomisili di Padang dengan latar belakang Pendidikan Teknik Rekayasa Perangkat Lunak, saya telah membangun pengalaman yang solid sebagai UI/UX Designer melalui berbagai proyek yang berfokus pada pembuatan alur pengguna yang intuitif, antarmuka yang jelas, serta sistem desain yang berdampak. Pengalaman tersebut menguatkan kemampuan saya dalam memahami kebutuhan pengguna dan menerjemahkannya menjadi solusi digital yang bermakna.",
-      bio2: "Selain perjalanan saya di bidang desain, saya juga memiliki minat yang kuat dalam web development. Dengan kemampuan yang saya kembangkan selama masa kuliah dan melalui beberapa proyek web, saya berkeinginan untuk mendapatkan lebih banyak pengalaman profesional di bidang ini. Saya bersemangat untuk terus mengembangkan keterampilan sebagai Web Developer sekaligus tumbuh sebagai UI/UX Designer, sehingga dapat berkontribusi dalam membangun produk digital yang tidak hanya berfungsi dengan baik tetapi juga menghadirkan pengalaman yang menyenangkan bagi pengguna.",
-      resumeButton: "Lihat Resume",
+      name: "GITHANI RIZKYKA PASYA",
+      bio1: "Dengan latar belakang Software Engineering, saya memiliki minat besar pada Web Development dan ingin terus berkembang secara profesional di bidang ini. Selain kemampuan web, saya juga berpengalaman sebagai UI/UX Designer dalam merancang alur yang intuitif, antarmuka yang jelas, serta sistem desain. Perpaduan keduanya membuat saya mampu menghasilkan produk digital—terutama website—yang tidak hanya berfungsi dengan baik tetapi juga memberikan pengalaman pengguna yang menyenangkan.",
+      cvButton: "Lihat CV",
+      portoButton : "Lihat Portofolio"
     },
   }
 
@@ -58,7 +58,6 @@ export function AboutSection({ language }: AboutSectionProps) {
 
     <div className="space-y-6 text-muted-foreground leading-relaxed">
       <p className="text-base">{currentContent.bio1}</p>
-      <p className="text-base">{currentContent.bio2}</p>
     </div>
 
     <div className="pt-6 flex gap-6">
@@ -66,8 +65,18 @@ export function AboutSection({ language }: AboutSectionProps) {
   className="gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-colors rounded-full"
   onClick={() => window.open("/cv.pdf", "_blank")}
 >
-  {currentContent.resumeButton}
+  {currentContent.cvButton}
 </Button>
+<a
+  href="https://bit.ly/portofoliogithani"
+  target="_blank"
+  rel="noopener noreferrer"
+>
+  <Button className="gap-2 group-hover:bg-primary group-hover:text-primary-foreground transition-colors rounded-full">
+    {currentContent.portoButton}
+  </Button>
+</a>
+
     </div>
   </div>
 </div>

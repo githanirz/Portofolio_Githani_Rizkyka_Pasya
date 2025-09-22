@@ -21,7 +21,7 @@ const translations = {
   id: {
     journey: "Perjalanan",
     projects: "Proyek",
-    skills: "Keahlian",
+    skills: "Teknologi",
     connect: "Kontak",
   },
 }
@@ -55,7 +55,7 @@ export function Navigation({ language, onLanguageChange }: NavigationProps) {
     >
       <div className="container mx-auto px-4 py-4">
         <div className="flex items-center justify-between">
-          <div className="text-xl font-bold text-primary">Portfolio</div>
+          <div className="text-lg font-bold text-primary">Githani Rizkyka Pasya</div>
 
           {/* Desktop Navigation */}
           <div className="hidden md:flex items-center space-x-8">
