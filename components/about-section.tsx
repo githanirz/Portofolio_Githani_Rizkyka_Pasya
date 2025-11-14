@@ -15,7 +15,7 @@ export function AboutSection({ language }: AboutSectionProps) {
       name: "GITHANI RIZKYKA PASYA",
       bio1: "With a background in Software Engineering, I am passionate about Web Development and eager to grow professionally in this field. Alongside my web skills, I have solid experience as a UI/UX Designer, creating intuitive flows, clear interfaces, and design systems. Combining both skills, I am able to deliver digital products especially websites that are not only functional but also provide engaging and enjoyable user experiences.",
       cvButton: "View CV",
-      portoButton : "ViewPortofolio"
+      portoButton : "ViewResume"
     },
     id: {
       title: "Tentang Saya",
@@ -23,7 +23,7 @@ export function AboutSection({ language }: AboutSectionProps) {
       name: "GITHANI RIZKYKA PASYA",
       bio1: "Dengan latar belakang Software Engineering, saya memiliki minat besar pada Web Development dan ingin terus berkembang secara profesional di bidang ini. Selain kemampuan web, saya juga berpengalaman sebagai UI/UX Designer dalam merancang alur yang intuitif, antarmuka yang jelas, serta sistem desain. Perpaduan keduanya membuat saya mampu menghasilkan produk digital—terutama website—yang tidak hanya berfungsi dengan baik tetapi juga memberikan pengalaman pengguna yang menyenangkan.",
       cvButton: "Lihat CV",
-      portoButton : "Lihat Portofolio"
+      portoButton : "Lihat Resume"
     },
   }
 
